@@ -7,7 +7,7 @@ public class NotificacionSMS extends Notificaciones {
     @Override
     public void enviarMensaje(String mensaje) {
         System.out.println(
-                "Se envía el mensaje \"" + mensaje + "\" por SMS a: " + receptorNotificacion
+                "Se envia el mensaje \"" + mensaje + "\" por SMS a: " + receptorNotificacion
         );
     }
 }
