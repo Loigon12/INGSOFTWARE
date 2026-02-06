@@ -1,13 +1,13 @@
-public class NotificacionCorreo extends Notificaciones{
+public class NotificacionCorreo extends Notificaciones {
 
-
-    public NotificacionCorreo(String receptorNotificacion) throws IllegalAccessException {
+    public NotificacionCorreo(String receptorNotificacion) {
         super(receptorNotificacion);
     }
 
     @Override
-    public void enviarMensaje(String mensaje){
-        System.out.println("Se envia el mensaje \"" + mensaje + "\" por correo a:" + receptorNotificacion
+    public void enviarMensaje(String mensaje) {
+        System.out.println(
+                "Se envía el mensaje \"" + mensaje + "\" por correo a: " + receptorNotificacion
         );
     }
 }

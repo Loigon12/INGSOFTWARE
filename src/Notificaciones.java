@@ -2,13 +2,12 @@ public abstract class Notificaciones {
 
     protected final String receptorNotificacion;
 
-    public Notificaciones(String receptorNotificacion) throws IllegalAccessException {
-        if(receptorNotificacion == null || receptorNotificacion.isBlank())
-            throw new IllegalAccessException("El receptor es invalido");
+    public Notificaciones(String receptorNotificacion) {
+        if (receptorNotificacion == null || receptorNotificacion.isBlank()) {
+            throw new IllegalArgumentException("El receptor es inválido");
+        }
         this.receptorNotificacion = receptorNotificacion;
     }
 
-    public abstract void enviarMensaje(String messaje);
+    public abstract void enviarMensaje(String mensaje);
 }
-
-
