@@ -1,4 +1,4 @@
-public class Notificaciones {
+public abstract class Notificaciones {
 
     protected final String receptorNotificacion;
 
@@ -7,6 +7,8 @@ public class Notificaciones {
             throw new IllegalAccessException("El receptor es invalido");
         this.receptorNotificacion = receptorNotificacion;
     }
+
+    public abstract void enviarMensaje(String messaje);
 }
 
 
